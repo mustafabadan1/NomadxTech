@@ -36,7 +36,20 @@ const AboutSection = () => {
       .to(quoteRef.current.querySelector(".about-2"), {
         opacity: 0.2,
         delay: 1,
+      })
+      .fromTo(
+        quoteRef.current.querySelector(".about-3"),
+        { opacity: 0.2 },
+        { opacity: 1 },
+        "<"
+      )
+      .to(quoteRef.current.querySelector(".about-2"), {
+        opacity: 0.2,
+        delay: 1,
       });
+
+
+      
 
     const scrollTriggerInstance = ScrollTrigger.create({
       trigger: targetSection.current,
@@ -68,6 +81,7 @@ const AboutSection = () => {
         I am a passionate UI Engineer who bridges the gap between development
         and design.{" "}
       </span>
+     
       <span
         className={`about-2 leading-tight ${
           willChange ? "will-change-opacity" : ""
@@ -75,6 +89,14 @@ const AboutSection = () => {
       >
         I take responsibility to craft a good user experience using modern
         frontend architecture.
+      </span>
+       <span
+        className={`about-3 leading-tight ${
+          willChange ? "will-change-opacity" : ""
+        }`}
+      >
+        I am a passionate UI Engineer who bridges the gap between development
+        and design.{" "}
       </span>
     </h1>
   );
