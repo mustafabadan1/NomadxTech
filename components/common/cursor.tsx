@@ -17,22 +17,22 @@ const Cursor = ({ isDesktop }: IDesktop) => {
   const onHover = () => {
     gsap.to(cursor.current, {
       scale: 0.5,
-      duration: 0.3,
+      duration: 0,
     });
     gsap.to(follower.current, {
       scale: 3,
-      duration: 0.3,
+      duration: 0,
     });
   };
 
   const onUnhover = () => {
     gsap.to(cursor.current, {
       scale: 1,
-      duration: 0.3,
+      duration: 0,
     });
     gsap.to(follower.current, {
       scale: 1,
-      duration: 0.3,
+      duration: 0,
     });
   };
 
@@ -40,13 +40,13 @@ const Cursor = ({ isDesktop }: IDesktop) => {
     gsap.to(cursor.current, {
       x: e.clientX,
       y: e.clientY,
-      duration: 0.1,
+      duration: 0,
       ease: Linear.easeNone,
     });
     gsap.to(follower.current, {
       x: e.clientX,
       y: e.clientY,
-      duration: 0.3,
+      duration: 0,
       ease: Linear.easeNone,
     });
   };
