@@ -8,6 +8,7 @@ import { gsap, Linear } from "gsap";
 import Button, { ButtonTypes } from "../common/button";
 import HeroImage from "./hero-image";
 
+// ? a nice mangment  styles with tailwind for sections
 const HERO_STYLES = {
   SECTION:
     "w-full flex md:items-center py-8 section-container min-h-screen relative mb-24",
@@ -20,6 +21,7 @@ const HERO_STYLES = {
 
 const HeroSection = React.memo(() => {
   const typedSpanElement: MutableRefObject<HTMLSpanElement> = useRef(null);
+  
   const targetSection: MutableRefObject<HTMLDivElement> = useRef(null);
 
   const initTypeAnimation = (
@@ -79,7 +81,7 @@ const HeroSection = React.memo(() => {
     <div className={HERO_STYLES.CONTENT}>
       <div className="md:mb-4 mb-2">
         <h2 className="text-4xl seq">Hello 👋🏻</h2>
-        <h1 className="text-3xl seq">I am Ayush Singh</h1>
+        <h1 className="text-3xl seq">This is NOMADX</h1>
       </div>
       <p className="mb-4">
         <span className={HERO_STYLES.TYPED_SPAN} ref={typedSpanElement}></span>

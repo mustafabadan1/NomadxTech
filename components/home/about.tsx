@@ -78,8 +78,7 @@ const AboutSection = () => {
           willChange ? "will-change-opacity" : ""
         }`}
       >
-        I am a passionate UI Engineer who bridges the gap between development
-        and design.{" "}
+       NOMADX is {""}
       </span>
      
       <span

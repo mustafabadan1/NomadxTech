@@ -42,7 +42,7 @@ const Footer = () => {
         ></Button>
       </div>
       <h2 className="text-center text-sm sm:text-base mt-8">
-        Designed and Developed with ❤️ by Ayush
+        Designed and Developed with  MoDedro ❤️
       </h2>
     </>
   );
@@ -55,7 +55,8 @@ const Footer = () => {
       id={footerRef}
     >
       <img
-        src="/footer-curve.svg"
+        src="footer-curve.svg"
+     
         alt="Footer"
         className="w-full"
         loading="lazy"
@@ -63,6 +64,8 @@ const Footer = () => {
         role="presentation"
         width={1440}
       />
+
+     
       <div className="h-full w-full">
         <div className="section-container flex-col flex h-full justify-end z-10 items-center py-12">
           {renderFooterContent()}

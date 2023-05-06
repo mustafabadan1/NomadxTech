@@ -16,6 +16,7 @@ const Header = () => {
             height={22}
           />
         </a>
+        {/* //= navbar */}
         <nav className={`outer-menu ${menuVisible ? "menu-visible" : ""}`}>
           <button
             className="hamburger w-6 h-6 flex items-center justify-center link relative"
